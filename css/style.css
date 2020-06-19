@@ -14,8 +14,7 @@
 }
 /* Brand */
 .logo{
-    width: 700px;
-    height: 300px;
+    width: 550px;
 }
 /* navbar */
 header{
@@ -175,6 +174,17 @@ section.copyright{
 @media only screen and (max-width:1201px){
     .nav-link{
         font-size: 0.8rem;
+        text-align: center;
         padding-top: 0;
+    }    
+    article{
+        margin-bottom: 20px;
     }
+}
+@media only screen and (max-width:801px){
+    body{ 
+        width: 800px;
+        margin: auto;
+    }
+
 }
