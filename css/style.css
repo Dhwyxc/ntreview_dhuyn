@@ -170,6 +170,10 @@ section.copyright{
     color: goldenrod;
 }
 
+a.h2{
+    text-decoration: none;
+}
+
 
 @media only screen and (max-width:1201px){
     .nav-link{
