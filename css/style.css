@@ -3,14 +3,14 @@
     
     src: local("Roboto Slab"),
     local("Roboto-Slab"),
-    url(/font/static/RobotoSlab-Regular.ttf);
+    url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 }
 @font-face{
     font-family: "Roboto Slab Light ";
     
     src: local("Roboto Slab Light"),
     local("Roboto-Slab-Light"),
-    url(/font/static/RobotoSlab-Light.ttf);
+    url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 }
 /* Brand */
 .logo{
