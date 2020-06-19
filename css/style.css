@@ -173,8 +173,14 @@ section.copyright{
 a.h2{
     text-decoration: none;
 }
-
-
+.text-ft{
+    color: #999;
+}
+.text-ft:hover{
+color: goldenrod;
+text-decoration: none;
+}
+ /* responsive */
 @media only screen and (max-width:1201px){
     .nav-link{
         font-size: 0.8rem;
