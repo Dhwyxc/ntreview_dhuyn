@@ -197,4 +197,10 @@ text-decoration: none;
         margin: auto;
     }
 
+}@media only screen and (max-width:401px){
+    body{ 
+        width: 400px;
+        margin: auto;
+    }
+
 }
