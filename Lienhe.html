@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Nha Trang Review</title>
+    <link rel="stylesheet" href="NPM/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="NPM/node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script> 
+        $(function(){
+          $("#brand").load("brand.html");
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+    </script> 
+</head>
+<body>
+<div id="brand"></div>
+<header id="header"></header>
+<div class="container">
+<form action="">
+    <h1 style="text-align: center;font-size: 40px;margin-top: 20px;">Liên hệ</h1>
+      <p>
+          <label for="">
+            Tên của bạn (bắt buộc)
+              <br>
+              <input class="form-control" type="text" id="name" size="50" required>
+          </label>
+      </p>
+      <p>
+          <label for="">
+            Email (bắt buộc)
+            <br>
+            <input class="form-control" type="text" name="email" size="50" required>
+          </label>
+      </p>
+      <p>
+        <label for="">
+            Chủ đề
+            <br>
+            <input class="form-control" type="text" name="email" size="50">
+          </label>
+      </p>
+      <p>
+          <label for="">
+            Nội dung
+              <br>
+              <textarea class="form-control" name="" id="" cols="53" rows="7" required></textarea>
+          </label>
+      </p>
+      <p>
+          <button class="button" type="submit">Gửi</button>
+      </p>
+</form>
+</div>
+<div id="footer"></div>
+</body>
+</html>
