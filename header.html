@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="NPM/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="NPM/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="NPM/node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <header> 
@@ -25,17 +26,73 @@
                         <a class="nav-link " href="Diadiem.html">ĐỊA ĐIỂM</a>
                         <ul class="sub_menu">
                             <li class="sub_item">
-                                <a href="">ĐỊA ĐIỂM ĂN UỐNG</a>
+                                <a id="anuong">ĐỊA ĐIỂM ĂN UỐNG</a>
                             </li>
+                            <!--  -->
+                            <script>
+                                $(document).ready(function() {
+                                $("#anuong").click(function() {
+                                    $("body,html").animate(
+                                    {
+                                        scrollTop: $("#anuongdiv").offset().top
+                                    },
+                                    800 //speed
+                                    );
+                                });
+                                });
+                            </script>
+                            <!--  -->
                             <li class="sub_item">
-                                <a href="">ĐỊA ĐIỂM VUI CHƠI</a>
+                                <a id="vuichoi">ĐỊA ĐIỂM VUI CHƠI</a>
                             </li>
+                            <!--  -->
+                            <script>
+                                $(document).ready(function() {
+                                $("#vuichoi").click(function() {
+                                    $("body,html").animate(
+                                    {
+                                        scrollTop: $("#vuichoidiv").offset().top
+                                    },
+                                    800 //speed
+                                    );
+                                });
+                                });
+                            </script>
+                            <!--  -->
                             <li class="sub_item">
-                                <a href="">ĐỊA ĐIỂM LƯU TRÚ</a>
+                                <a id="luutru">ĐỊA ĐIỂM LƯU TRÚ</a>
                             </li>
+                            <!--  -->
+                            <script>
+                                $(document).ready(function() {
+                                $("#luutru").click(function() {
+                                    $("body,html").animate(
+                                    {
+                                        scrollTop: $("#luutrudiv").offset().top
+                                    },
+                                    800 //speed
+                                    );
+                                });
+                                });
+                            </script>
+                            <!--  -->
                             <li class="sub_item">
-                                <a href="">ĐỊA ĐIỂM LÀM ĐẸP</a>
+                                <a id="lamdep">ĐỊA ĐIỂM LÀM ĐẸP</a>
                             </li>
+                            <!--  -->
+                            <script>
+                                $(document).ready(function() {
+                                $("#lamdep").click(function() {
+                                    $("body,html").animate(
+                                    {
+                                        scrollTop: $("#lamdepdiv").offset().top
+                                    },
+                                    800 //speed
+                                    );
+                                });
+                                });
+                            </script>
+                            <!--  -->
                         </ul>
                      </li>
                      <li class="nav-item item_menu">
