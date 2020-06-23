@@ -135,6 +135,7 @@ img{
 article{
     border-radius: 10px;
     transition: transform, box-shadow 0.5s;
+    margin-bottom: 20px;
 }
 article:hover{
     box-shadow: 2px 2px 15px 2px rgb(148, 126, 53);
@@ -146,7 +147,8 @@ article:hover{
     vertical-align: middle;
     width: 4rem;
 }
-
+/* btn ScrollTop */
+/* ------ */
 /* Footer */
 footer{
     padding-top: 15px;
@@ -187,9 +189,7 @@ text-decoration: none;
         text-align: center;
         padding-top: 0;
     }    
-    article{
-        margin-bottom: 20px;
-    }
+
 }
 @media only screen and (max-width:801px){
     body{ 
