@@ -10,7 +10,16 @@
     <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-    <button id="btn-scrolltop" style="border-radius: 50%; width: 60px; height: 60px;"></button>
+    <div class="scroll-btn">
+    <i class="fas fa-ellipsis-v"></i>
+    <br>
+    <br>
+    <button id="btn-scrolltop" class="rounded-circle"><i id="icon-up" class="fas fa-chevron-up"></i></button>
+    <br>
+    <br>
+    <i class="fas fa-ellipsis-v"></i>
+    </div>
+    
     <script>
          $(document).ready(function() {
             $("#btn-scrolltop").click(function() {
@@ -18,7 +27,7 @@
             {
                 scrollTop: $("#brand").offset().top
             },
-            800 //speed
+            500 //speed
             );
             });
             });
