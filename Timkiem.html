@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cẩm Nang Du Lịch - Nha Trang Review</title>
+    <title>Tìm Kiếm - Nha Trang Review</title>
     <link rel="stylesheet" href="NPM/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="NPM/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <script src="NPM/node_modules/jquery/dist/jquery.min.js"></script>
@@ -24,9 +24,6 @@
   <section id="blog-posts">
     <div class="containers TC">
         <br>
-        <h2 class="text-uppercase text-center mb-lg-5 title">
-        <span class="h2 text-uppercase pt-5">TÌM KIẾM</span>
-        </h2>
         <div id="rs_search"></div>
         <div class="row my-5">
             <div class="col-12 col-md-6 col-lg-4">
@@ -246,7 +243,7 @@
     for (let i = 0; i <decodeURI(window.location.href.slice(window.location.href.search("search=")+7,window.location.href.length)).split('+').length; i++) {
         d+=' '+decodeURI(window.location.href.slice(window.location.href.search("search=")+7,window.location.href.length)).split('+')[i];
     }
-    $('#rs_search').html("<h3>Kết quả tìm kiếm cho '"+d+" '.</h3>");
+    $('#rs_search').html("<h2>Kết quả tìm kiếm cho '"+d+" '.</h2>");
     
 </script>
 </html>
