@@ -32,6 +32,80 @@
                 </h1>
                 <h3 id="anuongdiv" class="h5 text-uppercase border border-dark d-inline-block p-1">Ăn Uống</h3>
                 <div class="row my-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                            <article>
+                                <a href="#">
+                                <div class="card-group">
+                                    <div class="card-img text-center">
+                                        <img src="img/andao-1024x520-400x200.jpg" width="100%" alt="">
+                                        <h5 class="p-2">
+                                            <a class="text-dark" href=""> ANDAO COFFEE & CHOCOLATE</a>
+                                         </h5>
+                                         <span class="strike text-color-c39d62">
+                                             <i>28 Tháng Năm, 2020</i>
+                                         </span>
+                                    </div>
+                                    <div class="card-body px-1">
+                                        
+                                        <span>Tiệm café có café ngon thì thường ít đẹp Mà tiệm đẹp thì thường ít có café ngon Vậy chọn đẹp hay chọn ngon? Uhmmm sao ta phải chọn trong khi có thể có cả hai nhỉ... </span>
+    
+                                    </div>
+                                </div>
+                                </a>
+                            </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="" style="margin: auto" >
+                            <article>
+                                <div class="card-group">
+                                    <div class="card-img text-center">
+                                        <img src="img/nha-be-chu-lam-binh-hung-1024x372-400x200.jpg" width="100%" alt="">
+                                        <h5 class="p-2">
+                                            <a class="text-dark" href="">BÈ HẢI SẢN CHÚ LÃM ĐẢO BÌNH HƯNG</a>
+                                         </h5>
+                                         <span class="strike text-color-c39d62">
+                                             <i>21 Tháng Năm, 2020</i>
+                                         </span>
+                                    </div>
+                                    <div class="card-body px-1">
+                                    
+                                        <span>Từ Nha Trang đi Bình Hưng hông gần, nhưng H cũng phải ráng đi ít nhất 02 lần mới cảm thấy đủ tự tin để review về nhà bè Chú Lãm và phong cho nó cái danh hiệu oách xà lách nhà ... </span>
+                                  
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <a href="" style="margin: auto" >
+                            <article>
+                                <div class="card-group">
+                                    <div class="card-img text-center">
+                                        <img src="img/sushi-mania-1024x380-400x200.jpg" width="100%" alt="">
+                                        <h5 class="p-2">
+                                            <a class="text-dark" href="">MANIA SUSHI LOUNGE</a>
+                                         </h5>
+                                         <span class="strike text-color-c39d62">
+                                             <i>05 Tháng Năm, 2020</i>
+                                         </span>
+                                    </div>
+                                    <div class="card-body px-1">
+                                    
+                                        <span>Các bạn ở Nha Trang có ai từng đến Mania Sushi Lounge chưa? Cái lounge nằm ngay mặt tiền đường Trần Phú số 72, thuộc tòa nhà Star City ấy (đối diện Sailing Club và sát bên ... </span>
+                                  
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    
+                <div class="col-12 text-right pt-4">
+                    <span class="text-uppercase">
+                    <a class="text-dark" id="btn_seemore" href="javascript:void()">Các bài kế tiếp <i class="fas fa-chevron-right"></i></a>
+                    </span>
+                </div>
+                </div>
+                <div id="see_more" class="hidden row my-5">
                     <div class="col-12 col-md-6 col-lg-4" id="post">
                             <article>
                                 <a href="#">
@@ -98,11 +172,6 @@
                             </article>
                         </a>
                     </div>
-                <div class="col-12 text-right pt-4">
-                    <span class="text-uppercase">
-                    <a class="text-dark" href="">Các bài kế tiếp <i class="fas fa-chevron-right"></i></a>
-                    </span>
-                </div>
                 </div>
                 <h3 id="vuichoidiv" class="h5 text-uppercase border border-dark d-inline-block p-1">Vui Chơi</h3>
                 <div class="row my-5">
@@ -535,4 +604,10 @@
 <!--   Footer   -->
         <div id="footer"></div>
         </body>
+        <script>
+            $('#btn_seemore').on('click', function() {
+                $('#see_more').removeClass('hidden');
+                $('#btn_seemore').addClass('hidden');
+            })
+        </script>
         </html>

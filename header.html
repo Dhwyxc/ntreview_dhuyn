@@ -103,8 +103,8 @@
                     </li>
                 </div>
                 <div class="nav__search">
-                    <form onsubmit="return false" id="search_bar">
-                            <input id="input" type="search" placeholder="Tìm kiếm...">                                                 
+                    <form onsubmit="return true" action="Timkiem.html" id="search_bar">
+                            <input id="input" type="search" name="search" placeholder="Tìm kiếm...">                                                 
                     </form>
                 </div>                    
                 </div>
@@ -112,12 +112,4 @@
             </nav>
     </header>   
 </body>
-<script>
-  $('#input').keypress(function(event){
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if(keycode == '13'){
-        alert('You pressed a "enter" key in textbox');  
-    }
-});
- </script>  
 </html>

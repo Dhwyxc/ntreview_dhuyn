@@ -147,6 +147,9 @@ article:hover{
     vertical-align: middle;
     width: 4rem;
 }
+.hidden{
+    display: none;
+}
 /* btn ScrollTop */
 .scroll-btn{
     font-size: 20px;
@@ -156,6 +159,7 @@ article:hover{
     bottom: 4.5%;
     z-index: 12;
 }
+
 #btn-scrolltop{
     border: solid goldenrod;
     background-color: black;
