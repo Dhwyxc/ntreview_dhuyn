@@ -13,102 +13,101 @@
     <header> 
             <nav class="navbar">
                 <div class="containerNav">
-                <div class="nav__social">
-                    <a href="https://www.facebook.com/ndhuy18" target="_blank" class="h2 mx-1"><i class="fab fa-facebook-square" style="color: white;"></i></a>
-                    <a href="https://www.instagram.com/_dhuyn__" target="_blank" class="h2"><i class="fab fa-instagram" style="color: white;"></i> </a>
-                    <a href="https://twitter.com/_ndhuy_" target="_blank" class="h2"><i class="fab fa-twitter-square" style="color: white;"></i></a>          
+                    <div class="nav__social">
+                        <a href="https://www.facebook.com/ndhuy18" target="_blank" class="h2 mx-1"><i class="fab fa-facebook-square" style="color: white;"></i></a>
+                        <a href="https://www.instagram.com/_dhuyn__" target="_blank" class="h2"><i class="fab fa-instagram" style="color: white;"></i> </a>
+                        <a href="https://twitter.com/_ndhuy_" target="_blank" class="h2"><i class="fab fa-twitter-square" style="color: white;"></i></a>          
+                    </div>
+                    <div class="nav__center">   
+                        <li class="nav-item">
+                            <a id="trangChu" class="nav-link " href="index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item item_menu">
+                            <a class="nav-link " href="Diadiem.html">ĐỊA ĐIỂM</a>
+                            <ul class="sub_menu">
+                                <li class="sub_item">
+                                    <a id="anuong">ĐỊA ĐIỂM ĂN UỐNG</a>
+                                </li>
+                                <!--  -->
+                                <script>
+                                    $(document).ready(function() {
+                                    $("#anuong").click(function() {
+                                        $("body,html").animate(
+                                        {
+                                            scrollTop: $("#div__anuong").offset().top
+                                        },
+                                        800 //speed
+                                        );
+                                    });
+                                    });
+                                </script>
+                                <!--  -->
+                                <li class="sub_item">
+                                    <a id="vuichoi">ĐỊA ĐIỂM VUI CHƠI</a>
+                                </li>
+                                <!--  -->
+                                <script>
+                                    $(document).ready(function() {
+                                    $("#vuichoi").click(function() {
+                                        $("body,html").animate(
+                                        {
+                                            scrollTop: $("#div__vuichoi").offset().top
+                                        },
+                                        800 //speed
+                                        );
+                                    });
+                                    });
+                                </script>
+                                <!--  -->
+                                <li class="sub_item">
+                                    <a id="luutru">ĐỊA ĐIỂM LƯU TRÚ</a>
+                                </li>
+                                <!--  -->
+                                <script>
+                                    $(document).ready(function() {
+                                    $("#luutru").click(function() {
+                                        $("body,html").animate(
+                                        {
+                                            scrollTop: $("#div__luutru").offset().top
+                                        },
+                                        800 //speed
+                                        );
+                                    });
+                                    });
+                                </script>
+                                <!--  -->
+                                <li class="sub_item">
+                                    <a id="lamdep">ĐỊA ĐIỂM LÀM ĐẸP</a>
+                                </li>
+                                <!--  -->
+                                <script>
+                                    $(document).ready(function() {
+                                    $("#lamdep").click(function() {
+                                        $("body,html").animate(
+                                        {
+                                            scrollTop: $("#div__lamdep").offset().top
+                                        },
+                                        800 //speed
+                                        );
+                                    });
+                                    });
+                                </script>
+                                <!--  -->
+                            </ul>
+                        </li>
+                        <li class="nav-item item_menu">
+                            <a class="nav-link" href="CNDL.html">CẨM NANG DU LỊCH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lienhe.html">LIÊN HỆ</a>
+                        </li>
+                    </div>
+                    <div class="nav__search">
+                        <form onsubmit="return true" action="Timkiem.html" id="search_bar">
+                                <input id="input" type="search" name="search" placeholder="Tìm kiếm...">                                                 
+                        </form>
+                    </div>                    
                 </div>
-                <div class="nav__center">   
-                    <li class="nav-item">
-                        <a id="trangChu" class="nav-link " href="index.html">TRANG CHỦ</a>
-                    </li>
-                    <li class="nav-item item_menu">
-                        <a class="nav-link " href="Diadiem.html">ĐỊA ĐIỂM</a>
-                        <ul class="sub_menu">
-                            <li class="sub_item">
-                                <a id="anuong">ĐỊA ĐIỂM ĂN UỐNG</a>
-                            </li>
-                            <!--  -->
-                            <script>
-                                $(document).ready(function() {
-                                $("#anuong").click(function() {
-                                    $("body,html").animate(
-                                    {
-                                        scrollTop: $("#anuongdiv").offset().top
-                                    },
-                                    800 //speed
-                                    );
-                                });
-                                });
-                            </script>
-                            <!--  -->
-                            <li class="sub_item">
-                                <a id="vuichoi">ĐỊA ĐIỂM VUI CHƠI</a>
-                            </li>
-                            <!--  -->
-                            <script>
-                                $(document).ready(function() {
-                                $("#vuichoi").click(function() {
-                                    $("body,html").animate(
-                                    {
-                                        scrollTop: $("#vuichoidiv").offset().top
-                                    },
-                                    800 //speed
-                                    );
-                                });
-                                });
-                            </script>
-                            <!--  -->
-                            <li class="sub_item">
-                                <a id="luutru">ĐỊA ĐIỂM LƯU TRÚ</a>
-                            </li>
-                            <!--  -->
-                            <script>
-                                $(document).ready(function() {
-                                $("#luutru").click(function() {
-                                    $("body,html").animate(
-                                    {
-                                        scrollTop: $("#luutrudiv").offset().top
-                                    },
-                                    800 //speed
-                                    );
-                                });
-                                });
-                            </script>
-                            <!--  -->
-                            <li class="sub_item">
-                                <a id="lamdep">ĐỊA ĐIỂM LÀM ĐẸP</a>
-                            </li>
-                            <!--  -->
-                            <script>
-                                $(document).ready(function() {
-                                $("#lamdep").click(function() {
-                                    $("body,html").animate(
-                                    {
-                                        scrollTop: $("#lamdepdiv").offset().top
-                                    },
-                                    800 //speed
-                                    );
-                                });
-                                });
-                            </script>
-                            <!--  -->
-                        </ul>
-                     </li>
-                     <li class="nav-item item_menu">
-                        <a class="nav-link" href="CNDL.html">CẨM NANG DU LỊCH</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="Lienhe.html">LIÊN HỆ</a>
-                    </li>
-                </div>
-                <div class="nav__search">
-                    <form onsubmit="return true" action="Timkiem.html" id="search_bar">
-                            <input id="input" type="search" name="search" placeholder="Tìm kiếm...">                                                 
-                    </form>
-                </div>                    
-                </div>
-
             </nav>
     </header>   
 </body>
