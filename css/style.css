@@ -109,6 +109,22 @@ color: whitesmoke;
     color: white;
 }
 /* body */
+.aboutme{
+    width: 100%;
+    height: 350px;
+}
+.aboutme .row .col-4 img{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.aboutme .row .col-8{
+    padding-top: 50px;
+    padding-right: 100px;
+    font-size: 20px;
+}
 body{
     font-family: 'Roboto Slab', serif;
 }
@@ -174,7 +190,6 @@ footer{
     padding-top: 15px;
     color: whitesmoke;
     background-color: black;
-    z-index: -1;
 }
 .containerfoot{
     width: 95%;
@@ -225,3 +240,24 @@ text-decoration: none;
     }
 
 }
+.backgimg {
+    width: 100%;
+    height: 500px;
+}
+.backgimg img{
+    border-radius: 0px;
+}
+.containersss{
+    padding-top: 100px;
+    width: 88%;
+    margin: auto;
+}
+.containerbody{
+    width: 60%;
+    margin: auto;
+}
+.containersss .containerbody img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
