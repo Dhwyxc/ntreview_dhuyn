@@ -27,12 +27,12 @@
   <h1 style="text-align: center;font-size: 40px;margin-top: 20px;">Liên hệ</h1>
   <div class="row mb-5">
     <div class="col-6">
-      <form action="">
+      <form id="fr1" method="post">
             <p>
                 <label for="">
                   Tên của bạn (bắt buộc)
                     <br>
-                    <input class="form-control" type="text" id="name" size="50" required>
+                    <input class="form-control" id="tb2" type="text" id="name" size="50" required>
                 </label>
             </p>
             <p>
@@ -46,19 +46,30 @@
               <label for="">
                   Chủ đề
                   <br>
-                  <input class="form-control" type="text" name="email" size="50">
+                  <input class="form-control" id="#tb1" type="text" size="50">
                 </label>
             </p>
             <p>
                 <label for="">
                   Nội dung
                     <br>
-                    <textarea class="form-control" name="" id="" cols="53" rows="7" required></textarea>
+                    <textarea class="form-control" name="" id="tb3" cols="53" rows="7" required></textarea>
                 </label>
             </p>
             <p>
-                <button class="button" type="submit">Gửi</button>
+                <button id="bt1" class="button" type="submit" >Gửi</button>
             </p>
+            <script>
+              $(document).ready(function() {
+              $('#bt1').click(function() {
+                  $('#fr1').attr('action',
+                                'mailto:ndhuy.19it1@sict.udn.vn?subject=' +
+                                $('#tb1').val() + '&body='+ $('#tb2').val() + " send an email to you : " +
+                                $('#tb3').val());
+                  $('#fr1').submit();
+                  });
+              });
+            </script>
       </form>
     </div>
     <div class="col-6">
