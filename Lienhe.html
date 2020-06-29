@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="NPM/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="NPM/node_modules/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
     <script> 
         $(function(){
           $("#brand").load("brand.html");
@@ -22,40 +24,91 @@
 <header id="header"></header>
 <!-- Content -->
 <div class="container">
-<form action="">
-    <h1 style="text-align: center;font-size: 40px;margin-top: 20px;">Liên hệ</h1>
-      <p>
-          <label for="">
-            Tên của bạn (bắt buộc)
-              <br>
-              <input class="form-control" type="text" id="name" size="50" required>
-          </label>
-      </p>
-      <p>
-          <label for="">
-            Email (bắt buộc)
-            <br>
-            <input class="form-control" type="text" name="email" size="50" required>
-          </label>
-      </p>
-      <p>
-        <label for="">
-            Chủ đề
-            <br>
-            <input class="form-control" type="text" name="email" size="50">
-          </label>
-      </p>
-      <p>
-          <label for="">
-            Nội dung
-              <br>
-              <textarea class="form-control" name="" id="" cols="53" rows="7" required></textarea>
-          </label>
-      </p>
-      <p>
-          <button class="button" type="submit">Gửi</button>
-      </p>
-</form>
+  <h1 style="text-align: center;font-size: 40px;margin-top: 20px;">Liên hệ</h1>
+  <div class="row mb-5">
+    <div class="col-6">
+      <form action="">
+            <p>
+                <label for="">
+                  Tên của bạn (bắt buộc)
+                    <br>
+                    <input class="form-control" type="text" id="name" size="50" required>
+                </label>
+            </p>
+            <p>
+                <label for="">
+                  Email (bắt buộc)
+                  <br>
+                  <input class="form-control" type="text" name="email" size="50" required>
+                </label>
+            </p>
+            <p>
+              <label for="">
+                  Chủ đề
+                  <br>
+                  <input class="form-control" type="text" name="email" size="50">
+                </label>
+            </p>
+            <p>
+                <label for="">
+                  Nội dung
+                    <br>
+                    <textarea class="form-control" name="" id="" cols="53" rows="7" required></textarea>
+                </label>
+            </p>
+            <p>
+                <button class="button" type="submit">Gửi</button>
+            </p>
+      </form>
+    </div>
+    <div class="col-6">
+      <div class="informe">
+        <p class="text-right">
+          <span class="h6 text-dark">
+            #Mọi thứ về tôi
+          </span>
+          <br>
+          <span class="h2 text-uppercase">
+            Nguyễn Đức Huy
+          </span>
+          <br><br>
+          <span class="h6 text-dark">#Email</span>
+          <br>
+          <span class="h5 font-weight-bold">
+            ndhuy.19it1@sict.vn
+          </span>
+          <br><br>
+          <span class="h6 text-dark">#Số điện thoại</span>
+          <br>
+          <span class="h5 font-weight-bold">0929 380 289 / 0362 828 321</span>
+          <br><br>
+          <span class="h6 text-dark ">#Địa chỉ</span>
+          <br>
+          <div id="map"></div>
+          <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var uluru = {lat: 15.87944, lng: 108.335};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 10, center: uluru});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBmeJ8pU7Xu3XgO5e2nDb6jbepaX9dlvY&callback=initMap">
+          </script>
+          <br>
+          <div class="btndonate">
+            <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/qZ38tre"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px;font-size:28px !important;">Buy me a coffee</span></a>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+
 </div>
 <!-- Footer vs Scroll -->
 <div id="footer"></div>

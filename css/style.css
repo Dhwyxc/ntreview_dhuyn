@@ -108,21 +108,76 @@ color: whitesmoke;
     cursor: auto;
     color: white;
 }
+/* map */
+.informe{
+    padding-right: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #bdbdbd11;
+}
+#map{
+    height: 175px;
+    width: 80%;
+    margin-left: 105px;
+}
+.bmc-button img{
+    height: 34px ;
+    width: 35px ;
+    margin-bottom: 1px ;
+    box-shadow: none ;
+    border: none ;
+    vertical-align: middle ;
+}
+.btndonate{
+    padding-left: 318px;
+    width: 100%;
+}
+.bmc-button{
+    padding: 7px 15px 7px 10px ;
+    line-height: 35px ;
+    height:51px ;
+    text-decoration: none ;
+    display:inline-flex ;
+    color:#000000 ;
+    background-color:gold;
+    border-radius: 5px ;
+    border: 2px solid #000000 ;
+    padding: 7px 15px 7px 10px ;
+    font-size: 22px ;
+    letter-spacing: 0.6px ;
+    font-family:'Cookie', cursive ;
+    -webkit-box-sizing: border-box ;
+    box-sizing: border-box ;
+}
+.bmc-button:hover, .bmc-button:active, .bmc-button:focus {
+    -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) ;
+    text-decoration: none ;
+    box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) ;
+    opacity: 0.85 ;
+    color:#000000 ;
+}
 /* body */
 .aboutme{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    margin-top: 30px;
     width: 100%;
     height: 350px;
+    border-radius: 10px;
+    background-color: rgba(175, 175, 175, 0.143);
 }
 .aboutme .row .col-4 img{
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
+.aboutme .row .col-4 img:hover{
+    box-shadow: 0px 0px 30px 1px rgba(142, 92, 0, 0.367);
+}
 .aboutme .row .col-8{
-    padding-top: 50px;
-    padding-right: 100px;
+    margin-left: -68px;
     font-size: 20px;
 }
 body{
@@ -260,4 +315,3 @@ text-decoration: none;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
