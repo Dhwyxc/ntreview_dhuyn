@@ -29,32 +29,36 @@
     <div class="col-6">
       <form id="fr1" method="POST">
             <p>
-                <label for="">
+                <label>
                   Tên của bạn (bắt buộc)
-                    <br>
-                    <input class="form-control" id="tb2" type="text" id="name" size="50" required>
-                </label>
+                </label>   
+                <br>
+                <input class="form-control" type="text" id="name" size="50" required>
+                
             </p>
             <p>
-                <label for="">
+                <label>
                   Email (bắt buộc)
-                  <br>
-                  <input class="form-control" type="text" name="email" size="50" required>
                 </label>
+                <br>
+                <input class="form-control" type="text" name="email" size="50" required>
+                
             </p>
             <p>
-              <label for="">
+                <label>
                   Chủ đề
-                  <br>
-                  <input class="form-control" id="#tb1" type="text" size="50">
                 </label>
+                <br>
+                <input id="subject" class="form-control"  type="text" size="50">
+              
             </p>
             <p>
-                <label for="">
+                <label>
                   Nội dung
-                    <br>
-                    <textarea class="form-control" name="" id="tb3" cols="53" rows="7" required></textarea>
                 </label>
+                <br>
+                <textarea class="form-control" name="message" id="message" cols="53" rows="7" required></textarea>
+               
             </p>
             <p>
                 <button id="bt1" class="button" type="submit" >Gửi</button>
@@ -63,9 +67,9 @@
               $(document).ready(function() {
               $('#bt1').click(function() {
                   $('#fr1').attr('action',
-                                'mailTo:ndhuy.19it1@sict.udn.vn?subject= ' +
-                                $("#tb1").val() + '&body='+ $("#tb2").val() +' Send an email to me : ' +
-                                $("#tb3").val());
+                                'mailTo:ndhuy.19it1@sict.udn.vn?subject= ' +$("#subject").val() +
+                                '&body='+ $("#name").val() +' Send an email to me : ' +
+                                $("#message").val());
                   $('#fr1').submit();
                   });
               });
