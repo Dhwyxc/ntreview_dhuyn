@@ -27,7 +27,7 @@
   <h1 style="text-align: center;font-size: 40px;margin-top: 20px;">Liên hệ</h1>
   <div class="row mb-5">
     <div class="col-6">
-      <form id="fr1" method="post">
+      <form id="fr1" method="POST">
             <p>
                 <label for="">
                   Tên của bạn (bắt buộc)
@@ -63,9 +63,9 @@
               $(document).ready(function() {
               $('#bt1').click(function() {
                   $('#fr1').attr('action',
-                                'mailto:ndhuy.19it1@sict.udn.vn?subject=' +
-                                $('#tb1').val() + '&body='+ $('#tb2').val() + " send an email to you : " +
-                                $('#tb3').val());
+                                'mailTo:ndhuy.19it1@sict.udn.vn?subject= ' +
+                                $("#tb1").val() + '&body='+ $("#tb2").val() +' Send an email to me : ' +
+                                $("#tb3").val());
                   $('#fr1').submit();
                   });
               });
