@@ -116,11 +116,18 @@ color: whitesmoke;
     height: 100%;
     background-color: #bdbdbd11;
 }
+.map{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
 #map{
     height: 175px;
     width: 80%;
-    margin-left: 105px;
+    
 }
+/* btndonate */
 .bmc-button img{
     height: 34px ;
     width: 35px ;
@@ -130,7 +137,8 @@ color: whitesmoke;
     vertical-align: middle ;
 }
 .btndonate{
-    padding-left: 318px;
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
 }
 .bmc-button{
