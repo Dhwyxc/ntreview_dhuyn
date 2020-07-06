@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huy - Nha Trang Review</title>
+    <link rel="stylesheet" href="NPM/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="NPM/node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <script> 
+        $(function(){
+          $("#brand").load("brand.html");
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html");
+          $("#scroll").load("ScrollTop.html"); 
+        });
+    </script> 
+</head>
+<body>
+<!-- Brand vs Header -->
+<div id="brand"></div>
+<header id="header"></header>
+<!-- Content -->
+<div class="containerss">
+  <h1 style="text-align: center;font-size: 40px;margin-top: 25px;">Huy</h1>
+  <div style="font-family:  Roboto Slab Light; font-size: 20px;">
+   <p class="text-center">
+    Chào các bạn mình là Huy, một blogger sinh ra và lớn lên tại Hội An, du lịch mọi nơi là sở thích của H và H còn thích viết review về những địa điểm H đã đi qua, chỉ lấy view làm lời, lấy like làm động lực, lấy share làm mục tiêu phấn đấu. H thích viết review về những nơi H đã đi qua, về thành phố biển Nha Trang nơi H đang sống, và chia sẻ những cảm xúc thật nhất của H,...Tóm lại H viết vì H thích thì H viết thôi!!! 
+   </p>
+  </div>
+  <img src="img/Huy1.jpg" alt="" width="100%" style="margin-bottom: 150px;">
+  <p class="text-center text-uppercase" style="font-size: 50px;font-weight: 300;"> Cuộc sống qua ống kính của Huy</p>
+    <div id="slide" style="width: 60%; margin-left: 20%; margin-bottom: 200px;">
+    <div class="slide__img00 slide"><img src="img/huyy1.jpg" width="800px" /></div>
+    <div class="slide__img01 slide"><img src="img/huyy2.jpg" width="800px" /></div>
+    <div class="slide__img02 slide"><img src="img/huyy3.jpg" width="800px" /></div>
+    <div class="slide__img03 slide"><img src="img/huyy4.jpg" width="800px" /></div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#slide').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+            });
+        });
+    </script>
+    <p class="text-center text-uppercase" style="font-size: 52px;font-weight: 200; margin-bottom: 150px;">
+        I am happy to be me
+        <br>
+        I may not be perfect but i am limited edition
+    </p>
+</div>
+<!-- Footer vs Scroll -->
+<div id="footer"></div>
+<div id="scroll"></div>
+</body>
+</html>
